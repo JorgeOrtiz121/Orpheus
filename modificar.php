@@ -1,4 +1,5 @@
 <?php
+// parametros para definir a la base de datos que trabajador vamos a traer su info
 include "conexion.php";
 include "modificarcontrol.php";
 $id = $_GET["id"];
@@ -20,7 +21,7 @@ $datos = $result->fetch_object();
 <body>
 <h2>Modificar Trabajador</h2>
     <form class="col-4" method="POST">
-        
+        <!----los formulario traen su variable para traer el dato por eso fetch_object quiere decir el contenido del objeto--->
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre:</label>
             <input type="text" name="nombre" class="form-control" value="<?= htmlspecialchars($datos->nombre) ?>">

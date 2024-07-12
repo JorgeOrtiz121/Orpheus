@@ -1,5 +1,5 @@
 <?php
-// esta solicitud captura despues de enviar el formulario de trabajador para crear
+// esta solicitud captura despues de enviar el formulario de trabajador para crear. estan validados para que todo debe estar lleno
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["btn-presionar"])) {
     
     if (!empty($_POST["nombre"]) && !empty($_POST["apellido"]) && !empty($_POST["email"]) && !empty($_POST["telefono"])) {

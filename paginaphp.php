@@ -16,6 +16,8 @@
     include "conexion.php";
     include "creartrabajador.php";
     include "eliminartrab.php";
+    
+
     ?>
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre Usuario:</label>
@@ -62,15 +64,19 @@
                     <td><?= htmlspecialchars($datos->email) ?></td>
                     <td><?= htmlspecialchars($datos->telefono) ?></td>
                     <td>
+                        <!---- todo href tiene como argumento el id de quien vamos a visualizar---->
                         <a href="modificar.php?id=<?= htmlspecialchars($datos->id) ?>" class="btn btn-warning btn-sm">Editar</a>
                         <a href="eliminartrab.php?id=<?= htmlspecialchars($datos->id) ?>" class="btn btn-danger btn-sm">Eliminar</a>
-                        <a href="crearinformaciontrabajador.php" class="btn btn-danger btn-sm">Informacion</a>
+                        <a href="crearinformaciontrabajador.php?id=<?= htmlspecialchars($datos->id) ?>" class="btn btn-danger btn-sm">Su informacion</a>
 
                     </td>
                 </tr>
 
             <?php } ?>
+
+          
         </tbody>
+       
     </table>
 </body>
 
