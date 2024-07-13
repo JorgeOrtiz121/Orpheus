@@ -3,7 +3,7 @@ el ejercicio acorde a la descricion del reto es que al momento de crear el traba
 de crear pero si seleccionamos en el boton editar de un item nos da la opcion de editar. Recalco que debemos ver que el id del trabajador ay que ponerlo en el input de id trabajador para poder acertar bien en 
 la modificacion. les agradezco a orpheus por esta oportunidad y por aprender php , estoy feliz con eso y espero tener la oportunidad de trabajar con ustedes . gracias
 querys 
-'''
+```
 CREATE TABLE `trabajadores` (
   `id` int(11) NOT NULL,
   `nombre` varchar(100) NOT NULL,
@@ -21,4 +21,4 @@ CREATE TABLE informacion (
   puesto_trabajo varchar (100) UNIQUE NOT null  
 );
 
-'''
+```
